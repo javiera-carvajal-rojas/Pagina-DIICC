@@ -11,3 +11,4 @@ Quienes Trabajaron
   - Rodrigo Candia G
   - Felipe Chepilla R
   - Javiera Carvajal R
+  - Ignacio Almonte G

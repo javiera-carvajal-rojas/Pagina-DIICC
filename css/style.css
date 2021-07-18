@@ -1309,6 +1309,10 @@ textarea {
     height: 540px;
     overflow-y: auto;
 }
+
+.let h4{
+    font-size: 30px;
+}
 /*-----------------------------------------*/
 /*  5. Choose CSS
 /*----------------------------------------*/
@@ -1573,6 +1577,8 @@ textarea {
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
 }
 .event-date{
+    width: 133px;
+    height: 86px;
     float: left;
     background: #254C5A;
     margin-right: 20px;
@@ -1866,6 +1872,22 @@ textarea {
     content: "";
     background: rgba(0, 0, 0, 0.1);
 }
+.testimonial-area:before{
+    position: absolute;
+    right: 130px;
+    bottom: 0;
+    width: 293px;
+    height: 506px;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    display: block;
+    content: "";
+    background: url(..img/testimonial/img2.jpg);
+    background-repeat: no-repeat;
+    z-index: 1;
+}
 .testimonial-area.three{background: #FAFAFA}
 .testimonial-area.three:after{display: none}
 .testimonial-area.three .testimonial-content p{color: #606060}
@@ -2084,7 +2106,7 @@ textarea {
     margin-right: 70px;
 }
 .blog-sidebar {
-    margin-top: 35px;
+    margin-top: 0px;
 }
 .single-post-img a{float: left; margin-right: 20px; position: relative}
 .single-post-img a:after{
