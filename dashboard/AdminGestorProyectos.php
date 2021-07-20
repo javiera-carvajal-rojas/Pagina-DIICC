@@ -28,41 +28,8 @@
             <section class="seccion">
                 <div class="container-Noticias">
                     <div class="container-boton">
-                        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
-                            Añadir Proyecto
-                        </button>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 style="text-align:center;" class="modal-title" id="exampleModalLabel">Nuevo Proyecto</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                 <div class="modal-body">
-                                     <div style="margin-left: 110px;" class="form-field "><br>
-                                         <input   name="imagen" type="file" required>
-                                    </div>
-                                    <div class="form-field  " style="text-align:center; margin-top: 5px;">
-                                        <input style="width: 200px; text-align:center;" id="nombre" name="nombre" class="input-text js-input" placeholder="Nombre" type="text" required>
-                     
-                                    </div>
-                                    <div class="form-field  " style="text-align:center; margin-top: 5px;">
-                                        <input style="width: 200px; text-align:center;" id="año" name="año" class="input-text js-input" placeholder="Año" type="text" required>
-                                    </div>
-                                    <div class="form-field  " style="text-align:center; margin-top: 5px;">
-                                        <input style="width: 200px; text-align:center;" id="link" name="link" class="input-text js-input" placeholder="Link" type="text" required>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn " data-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn">Ingresar</button>
-                                </div>
-                            </div>
-                        </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addcourse-modal">Añadir Proyeto</button>
                     </div>
-                </div>
                     <table class="table">
                         <thead style="background-color: steelblue;">
                             <tr style="height: 40px;">

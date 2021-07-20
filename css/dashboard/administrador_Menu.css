@@ -130,21 +130,19 @@
 		position:relative;
 		width: 90%;
 		height: 100%;
-		background: rgb(238, 238, 238,0.4);
+		background: rgb(238, 238, 238);
 		margin: auto;
 		margin-top: -270px;
 		border-radius: 15px;
-		
 	}
-	.section{
+	section{
 		margin-top: 25px;
-
 	}
 
 	.container-Noticias{
 		margin: auto;
 		padding-top: 40px;
-		padding-bottom: 30px;
+		padding-bottom: 50px;
 	}
 	.container-boton{
 		padding-bottom: 25px;
@@ -155,26 +153,13 @@
 	.container-boton .btn{
 		width: 150px;
 		height: 35px;
-		background-color:#27AE60 ;
-		border-color: #145A32; 
-	
-		
-	}
-	.btn-buscar{
-		width: 150px;
-		height: 35px;
-		background-color:#27AE60 ;
-		border-color: #145A32; 
-		border-radius: 4px;
-		border: 1px solid
-	
+		background-color: steelblue;
 	}
 	.container-boton .btn:hover{
 		transform: scale(1.15);
     	cursor: pointer;
     	transition: 2s;
-		background-color: #1E8449;
-			color: white;
+		background-color: rgb(123, 216, 245);
 	} 
 
 	.table{
@@ -187,24 +172,8 @@
 	}
 	
 	.tbody{
-		background-color: rgb(229, 231, 233);
+		background-color: rgba(216, 216, 216, 0.8);
 	}
-	thead th{
-    	color: #FBFCFC;
-    	text-align: center;
-    	background: #000000;
-    	width: 500px;
-	}
-	tbody tr{
-		border-bottom: solid #AAB7B8;
-	}
-
- 	table {
-       display: block;
-       overflow-x: auto;
-       height: 500px;
-      
-  	}
 
 	.fondo img{
 		width: 100%;
@@ -218,13 +187,4 @@
 
 	.container-Noticias .table .btn-group:hover{
     	cursor: pointer;
-	}
-	.perfil{
-		font-size: 45px;
-	}
-	textarea{
-		width: 198px;
-	}
-	.row{
-		margin: 5px;
 	}
