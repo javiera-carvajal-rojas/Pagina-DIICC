@@ -28,7 +28,39 @@
             <section class="seccion">
                 <div class="container-Noticias">
                     <div class="container-boton">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addcourse-modal">Añadir Bolsa de Trabajo</button>
+                        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                            Añadir Bolsa de trabajo
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 style="text-align:center;" class="modal-title" id="exampleModalLabel">Nueva Bolsa de trabajo</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div style="margin-left: 110px;" class="form-field "><br>
+                                            <input   name="imagen" type="file" required>
+                                        </div>
+                                        <div class="form-field  " style="text-align:center; margin-top: 5px;">
+                                            <input style="width: 200px; text-align:center;" id="titulo" name="titulo" class="input-text js-input" placeholder="Titulo" type="text" required>
+                                        </div>
+                                        <div class="form-field  " style="text-align:center; margin-top: 5px;">
+                                            <input style="width: 200px; text-align:center;" id="fecha" name="fecha" class="input-text js-input" placeholder="Fecha" type="text" required>
+                                        </div>
+                                        <div class="form-field  " style="text-align:center; margin-top: 5px;">
+                                            <input style="width: 200px; text-align:center;" id="ciudad" name="ciudad" class="input-text js-input" placeholder="Ciudad" type="text" required>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn " data-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn">Ingresar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <table class="table">
                         <thead style="background-color: steelblue;">
