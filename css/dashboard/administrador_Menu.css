@@ -167,6 +167,9 @@
 		margin: auto !important;
 		
 	}
+	.table th{
+		text-align: center;
+	}
 	.table td{
 		padding-top: 10px;
 	}
@@ -187,4 +190,38 @@
 
 	.container-Noticias .table .btn-group:hover{
     	cursor: pointer;
+	}
+
+	.container-formulario{
+		width: 90%;
+		margin: auto;
+	}
+	.container-formulario form{
+		width: 70%;
+		margin: auto;
+		text-align: center;
+		padding-top: 30px;
+	}
+	
+	.container-formulario .input-group{
+		padding-top: 30px;
+	}
+	.container-formulario .container-bttn{
+		padding-top: 30px;
+	}
+	.container-formulario .container-bttn .btn{
+		width: 150px;
+		height: 35px;
+	}
+	.container-formulario .container-bttn .btn:hover{
+		transform: scale(1.15);
+    	cursor: pointer;
+    	transition: 2s;
+		background-color: rgb(10, 100, 1);
+	}
+	.container-formulario label{
+		padding-bottom: 25px;
+		text-align: left;
+		width: 90%;
+		margin: auto;
 	}
