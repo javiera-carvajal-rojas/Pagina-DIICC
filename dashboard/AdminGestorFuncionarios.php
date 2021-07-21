@@ -89,13 +89,7 @@
                                         <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo $mostrar['correo']; ?></small></p>
                                     </td>
                                     <td>
-                                        <p class="card-text" style="text-align: center; width: 50px;"><small class="text-muted"><?php echo $mostrar['fono']; ?></small></p>
-                                    </td>
-                                    <td>
                                         <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo $mostrar['cargo']; ?></small></p>
-                                    </td>
-                                     <td >
-                                        <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo $mostrar['descripcion']; ?></small></p>
                                     </td>
                                      
                                     <td style="text-align: center; "><img style="width: 150px; height: 150px; padding-left:25px;" src=<?php echo fromroot($file, $mostrar["img_path"]); ?>></td>

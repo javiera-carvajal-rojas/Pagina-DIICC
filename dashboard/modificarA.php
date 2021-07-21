@@ -3,17 +3,22 @@
 <?php
 session_start();
 $file = __FILE__;
+$pagetitle = "ACADEMICOS - DIICC UDA";
 include_once "../include/functions.php";
 include_once "../config/config.php";
-include_once "../include/dashboard/head.php";
+
+if (!isset($_SESSION['usuario'])){
+    header(sprintf('Location:%s', fromroot($file, "index.php", True)));
+}
+include_once fromroot($file, "include/dashboard/head.php", TRUE);
 ?>
 
 <body>
     <div class="container-contenido">
-        <?php include_once "../include/dashboard/header.php"; ?>
+        <?php include_once fromroot($file, "include/dashboard/header.php", TRUE); ?>
         <div class="capa"></div>
         <!--    --------------->
-        <?php include_once "../include/dashboard/navbar.php"; ?>
+        <?php include_once fromroot($file, "include/dashboard/navbar.php", TRUE); ?>
         <div class="fondo">
             <img src="../img/dpto/dpto.jpg" alt="">
         </div>
@@ -46,7 +51,7 @@ include_once "../include/dashboard/head.php";
                             </div>
                              <div class="input-group">
                                 <span class="input-group-addon" id="basic-addon4"><i class="bi bi-paint-bucket"></i></span>
-                                <textarea class="form-control" name="descripcion" placeholder="Descripcion" style="height: 250px;"><?php echo   $mostrar['descripcion']; ?></textarea>
+                                <textarea class="form-control" name="descripcion" placeholder="Descripcion" style="height: 250px;"><?php echo $mostrar['descripcion']; ?></textarea>
                             </div>
                              <div class="input-group">
                                 <span class="input-group-addon" id="basic-addon5"><i class="bi bi-paint-bucket"></i></span>
