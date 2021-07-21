@@ -67,7 +67,7 @@
                                         <input style="width: 200px; text-align:center;" id="area_interes" name="area_interes" class="input-text js-input" placeholder="Area de interes" type="text" required>
                                     </div>
                                      <div style="margin-left: 110px;" class="form-field "><br>
-                                         <input   name="imagen" type="file" required>
+                                         <input name="img" type="file" required>
                                     </div>
                                     <div style="margin-top:30px; text-align: center;" class="container-ingresar">
                                         <button type="submit" class="btn">Ingresar</button>

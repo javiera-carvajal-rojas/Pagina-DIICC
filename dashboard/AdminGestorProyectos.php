@@ -43,14 +43,14 @@
                                  <div class="modal-body">
                                     <form action="../database/proyectos/crear.php" method="POST" enctype="multipart/form-data">
                                      <div style="margin-left: 110px;" class="form-field "><br>
-                                         <input   name="imagen" type="file" required>
+                                         <input   name="img" type="file" required>
                                     </div>
                                     <div class="form-field  " style="text-align:center; margin-top: 5px;">
                                         <input style="width: 200px; text-align:center;" id="nombre" name="nombre" class="input-text js-input" placeholder="Nombre" type="text" required>
                      
                                     </div>
                                     <div class="form-field  " style="text-align:center; margin-top: 5px;">
-                                        <input style="width: 200px; text-align:center;" id="añoo" name="año" class="input-text js-input" placeholder="Año" type="text" required>
+                                        <input style="width: 200px; text-align:center;" id="año" name="año" class="input-text js-input" placeholder="Año" type="text" required>
                                     </div>
                                     <div class="form-field  " style="text-align:center; margin-top: 5px;">
                                         <input style="width: 200px; text-align:center;" id="link" name="link" class="input-text js-input" placeholder="Link" type="text" required>

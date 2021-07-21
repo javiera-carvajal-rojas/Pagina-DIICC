@@ -42,9 +42,8 @@
                                     </div>
                                 <form action="../database/publicacion/crear.php" method="POST" enctype="multipart/form-data">
                                 <div class="modal-body">
-                                    <form action="../database/publicacion/crear.php" method="POST">
                                     <div style="margin-left: 110px;" class="form-field "><br>
-                                        <input   name="imagen" type="file" required>
+                                        <input   name="img" type="file" required>
                                     </div>
                                     <div class="form-field  " style="text-align:center; margin-top: 5px;">
                                         <input style="width: 200px; text-align:center;" id="nombre" name="titulo" class="input-text js-input" placeholder="Titulo" type="text" required>
@@ -96,7 +95,7 @@
                         </thead>
                         <tbody class="tbody">
                             <?php
-                            $sql = "select * from publicaciones ORDER BY id DESC"; // mejorar query falta nombre del que subio la noticia
+                            $sql = "select p.*, f.Nombre as autor from publicaciones as p INNER JOIN funcionarios as f ON p.id_academico = f.id ORDER BY p.id DESC"; // mejorar query falta nombre del que subio la noticia
                             $resultado = mysqli_query($conexion, $sql);
                             while ($mostrar = mysqli_fetch_array($resultado)) {
                             ?>

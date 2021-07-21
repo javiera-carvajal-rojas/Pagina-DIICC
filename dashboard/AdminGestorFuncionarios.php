@@ -53,7 +53,7 @@
                                             <input style="width: 200px; text-align:center;" id="cargo" name="cargo" class="input-text js-input" placeholder="Cargo" type="text" required>
                                         </div>
                                         <div style="margin-left: 110px;" class="form-field "><br>
-                                            <input   name="imagen" type="file" required>
+                                            <input   name="img" type="file" required>
                                         </div>
                                         <div style="margin-top:30px; text-align: center;" class="container-ingresar">
                                             <button type="submit" class="btn">Ingresar</button>
@@ -100,7 +100,7 @@
                                     <td>
                                         <div class="btn-group btn-group-sm" style="text-align: center;" role="group">
                                             <a class="btn btn-secondary"style="color:seagreen;" href="../dashboard/modificarF.php?id=<?php echo $mostrar['id']; ?>"><i class="bi bi-pencil"></i></a>
-                                            <a class="btn btn-danger" href="../database/funcionarios/eliminar.php?id=<?php echo $mostrar['id']; ?>"><i class="bi bi-x-circle"></i></a>
+                                            <a class="btn btn-danger" href="../database/academicos/eliminar.php?id=<?php echo $mostrar['id']; ?>"><i class="bi bi-x-circle"></i></a>
                                         </div>
                                     </td>
                                 </tr>

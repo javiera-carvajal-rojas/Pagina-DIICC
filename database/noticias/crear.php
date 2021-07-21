@@ -5,7 +5,6 @@ include_once "../../include/functions.php";
 include_once "../../config/config.php";
 
 
-$id = $_POST['id'];
 $image = "";
 
 if (!empty($_FILES['img'])){

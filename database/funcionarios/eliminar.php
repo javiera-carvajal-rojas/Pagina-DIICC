@@ -7,6 +7,6 @@ include_once "../../config/config.php";
 $sql = "DELETE FROM funcionarios WHERE id = %s";
 $result = $conexion->query(sprintf($sql,  $_GET['id']));
 
-header(sprintf('Location:%s', fromroot($file, "dashboard/AdminGestorAcademicos.php", True)));
+header(sprintf('Location:%s', fromroot($file, "dashboard/AdminGestorFuncionarios.php", True)));
 
 ?>

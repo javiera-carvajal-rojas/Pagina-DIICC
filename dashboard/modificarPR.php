@@ -38,7 +38,7 @@ include_once "../include/dashboard/head.php";
                             </div>
                            <div class="input-group">
                                 <span class="input-group-addon" id="basic-addon3"><i class="bi bi-paint-bucket"></i></span>
-                                <input  class="form-control" name="año" placeholder="Año" <?php echo sprintf('value="%s"',  strftime('%I:%M %p %d/%m/%Y', strtotime($mostrar['fecha']))) ?>>
+                                <input  class="form-control" name="año" placeholder="Año" <?php echo sprintf('value="%s"',  strftime('%I:%M %p %d/%m/%Y', strtotime($mostrar['year']))) ?>>
                             </div>
                              <div class="input-group">
                                 <span class="input-group-addon" id="basic-addon4"><i class="bi bi-paint-bucket"></i></span>

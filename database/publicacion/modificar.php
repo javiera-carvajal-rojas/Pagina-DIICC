@@ -34,7 +34,7 @@ if (!empty($_FILES['img'])){
 }
 
 $sql = 'UPDATE publicaciones SET  titulo= \'%s\', revision =  \'%s\',fecha =\'%s\',acceso =\'%s\',id_academico=\'%s\' WHERE id = %s';
-$sql = sprintf($sql, $_POST['titulo'], $_POST['revision'],$_POST['fecha'],$_POST['acceso'],$_POST['id-academico'], $id);
+$sql = sprintf($sql, $_POST['titulo'], $_POST['revision'],$_POST['fecha'],$_POST['acceso'],$_POST['autor'], $id);
 $result = $conexion->query($sql);
 
 header(sprintf('Location:%s', fromroot($file, "dashboard/AdminGestorPublicaciones.php", True)));

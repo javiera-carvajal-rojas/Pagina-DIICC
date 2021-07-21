@@ -5,7 +5,6 @@ include_once "../../include/functions.php";
 include_once "../../config/config.php";
 
 
-$id = $_POST['id'];
 $image = "";
 
 if (!empty($_FILES['img'])){
@@ -29,9 +28,8 @@ if (!empty($_FILES['img'])){
     }
 }
 
-$sql = 'INSERT INTO publicaciones(titulo,revision,fecha,acceso,img_path,es_academico) VALUES (\'%s\', \'%s\', \'%s\', \'%s\',\'%s\',\'%s\')';
-$sql = sprintf($sql, $_POST['titulo'], $_POST['revision'],$_POST['fecha'],$_POST['acceso'],$image,$_POST['es_academico']);
-echo $sql;
+$sql = 'INSERT INTO publicaciones(titulo,revision,fecha,acceso,img_path,id_academico) VALUES (\'%s\', \'%s\', \'%s\', \'%s\',\'%s\',\'%s\')';
+$sql = sprintf($sql, $_POST['titulo'], $_POST['revision'],$_POST['fecha'],$_POST['acceso'],$image,$_POST['autor']);
 $result = $conexion->query($sql);
 
 header(sprintf('Location:%s', fromroot($file, "dashboard/AdminGestorPublicaciones.php", True)));
