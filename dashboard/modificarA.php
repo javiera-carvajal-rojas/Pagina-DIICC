@@ -31,7 +31,7 @@ include_once fromroot($file, "include/dashboard/head.php", TRUE);
                         $resultado = mysqli_query($conexion, $sql);
                         $mostrar = mysqli_fetch_array($resultado);
                         ?>
-                        <form class="form" action="../database/funcionarios/modificar.php" method="post" enctype="multipart/form-data">
+                        <form class="form" action="../database/academicos/modificar.php" method="post" enctype="multipart/form-data">
                             <input type="hidden" name='id' <?php echo sprintf('value="%s"', $_GET['id']); ?>>
                             <div class="input-group">
                                 <span class="input-group-addon" id="basic-addon1">@</span>
@@ -59,7 +59,7 @@ include_once fromroot($file, "include/dashboard/head.php", TRUE);
                             </div>
                             <div class="input-group">
                                 <span class="input-group-addon" id="basic-addon6"><i class="bi bi-paint-bucket"></i></span>
-                                <input  class="form-control" name="area_interes" placeholder="Grado Academico" <?php echo sprintf('value="%s"',$mostrar['area_interes']); ?>>
+                                <input  class="form-control" name="area_interes" placeholder="Área ínteres" <?php echo sprintf('value="%s"',$mostrar['area_interes']); ?>>
                             </div>
 
                             <div class="input-group">

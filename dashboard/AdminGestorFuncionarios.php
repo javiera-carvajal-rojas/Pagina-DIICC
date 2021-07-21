@@ -41,7 +41,8 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <form action="../database/formulario/crear.php" method="POST" enctype="multipart/form-data">
+                                        <form action="../database/funcionarios/crear.php" method="POST" enctype="multipart/form-data">
+                                        <input type="hidden" name='tipo' value="1">
                                         <div class="form-field  " style="text-align:center; margin-top: 5px;">
                                             <input style="width: 200px; text-align:center;" id="nombre" name="nombre" class="input-text js-input" placeholder="Nombre" type="text" required>
                                         </div>
