@@ -22,7 +22,7 @@ include_once "../include/dashboard/head.php";
                 <div class="container-Noticias">
                     <div class="container-formulario">
                         <?php
-                        $sql = sprintf("select * from funcionarios where es_academico=1 , id=%s", $_GET['id']);
+                        $sql = sprintf("select * from funcionarios where es_academico=1 and id=%s", $_GET['id']);
                         $resultado = mysqli_query($conexion, $sql);
                         $mostrar = mysqli_fetch_array($resultado);
                         ?>
@@ -30,7 +30,7 @@ include_once "../include/dashboard/head.php";
                             <input type="hidden" name='id' <?php echo sprintf('value="%s"', $_GET['id']); ?>>
                             <div class="input-group">
                                 <span class="input-group-addon" id="basic-addon1">@</span>
-                                <input type="text" name='nombre' class="form-control" placeholder="Nombre" aria-describedby="basic-addon1" <?php echo sprintf('value="%s"',  $mostrar['nombre']); ?>>
+                                <input type="text" name='nombre' class="form-control" placeholder="Nombre" aria-describedby="basic-addon1" <?php echo sprintf('value="%s"',  $mostrar['Nombre']); ?>>
                             </div>
                              <div class="input-group">
                                 <span class="input-group-addon" id="basic-addon2"><i class="bi bi-paint-bucket"></i></span>
