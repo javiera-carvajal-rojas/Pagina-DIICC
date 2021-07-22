@@ -77,31 +77,35 @@
 
                     </div>
                     <div class="row-md-5 row-sm-5 row-xs-12">
-
+                        <?php
+                            $query = "SELECT `titulo`, `revision`, `fecha`, `acceso` FROM `publicaciones` WHERE id_academico=%s";
+                            $res = $conexion->query(sprintf($query,$_GET['id']));
+                            if ($res->num_rows != 0){
+                        ?>
                         <h3>Artículos</h3>
                         <table class="table" style="width: 100%">
                             <thead class="table-dark">
                                 <tr align="center">
                                     <th>Título</th>
-                                    <th>Autores</th>
+                                    <th>Revisión</th>
                                     <th>Fecha de Publicación</th>
                                     <th>Ver artículo</th>
                                 </tr>
                             </thead>
                             <?php
-                            $query = "SELECT `titulo`, `autor`, `fecha`, `acceso` FROM `publicaciones` WHERE id_academico=%s";
-                            $res = $conexion->query(sprintf($query,$_GET['id']));
                             while ($row = $res->fetch_assoc()) {
                             ?>
                                 <tr align="center">
                                     <td><?php echo $row['titulo']; ?></td>
-                                    <td><?php echo $row['autor']; ?></td>
+                                    <td><?php echo $row['revision']; ?></td>
                                     <td><?php echo $row['fecha']; ?></td>
                                     <td><a href="<?php echo $row['acceso']; ?>">Ver Artículo</a></td>
                                 </tr>
                             <?php
                             } ?>
                         </table>
+                        <?php
+                            } ?>
                     </div>
                 </div>
             </div>
