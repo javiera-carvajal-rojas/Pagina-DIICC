@@ -30,15 +30,15 @@ include_once "../include/dashboard/head.php";
                         <form class="form" action="../database/funcionarios/modificar.php" method="post" enctype="multipart/form-data">
                             <input type="hidden" name='id' <?php echo sprintf('value="%s"', $_GET['id']); ?>>
                             <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon1">@</span>
+                                <span class="input-group-addon" id="basic-addon1"><i class="bi bi-file-person"></i></span>
                                 <input type="text" name='nombre' class="form-control" placeholder="Nombre" aria-describedby="basic-addon1" <?php echo sprintf('value="%s"',  $mostrar['Nombre']); ?>>
                             </div>
                              <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon2"><i class="bi bi-paint-bucket"></i></span>
+                                <span class="input-group-addon" id="basic-addon2"><i class="bi bi-envelope"></i></span>
                                 <input  class="form-control" name="correo" placeholder="correo" <?php echo sprintf('value="%s"',  $mostrar['correo']); ?>>
                             </div>
                              <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon3"><i class="bi bi-paint-bucket"></i></span>
+                                <span class="input-group-addon" id="basic-addon3"><i class="bi bi-briefcase"></i></span>
                                 <input  class="form-control" name="cargo" placeholder="cargo" <?php echo sprintf('value="%s"',  $mostrar['cargo']); ?>>
                             </div>
 

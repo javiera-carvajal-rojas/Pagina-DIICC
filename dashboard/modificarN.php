@@ -21,7 +21,7 @@ include_once "../include/dashboard/head.php";
         <div class="container-center rounded">
             <section class="seccion">
                 <div class="container-Noticias">
-                    <div class="form" class="container-formulario">
+                    <div class="container-formulario">
                         <?php
                         $sql = sprintf("select * from noticias where id=%s", $_GET['id']);
                         $resultado = mysqli_query($conexion, $sql);
@@ -30,7 +30,7 @@ include_once "../include/dashboard/head.php";
                         <form action="../database/noticias/modificar.php" method="POST" enctype="multipart/form-data">
                             <input type="hidden" name="id" id="id" <?php echo sprintf('value="%s"', $_GET['id']); ?>>
                             <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon1">@</span>
+                                <span class="input-group-addon" id="basic-addon1"><i class="bi bi-fonts"></i></span>
                                 <input type="text" name='titulo' class="form-control" placeholder="Username" aria-describedby="basic-addon1" <?php echo sprintf('value="%s"',  $mostrar['titulo']); ?>>
                             </div>
 
