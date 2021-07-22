@@ -27,8 +27,8 @@ if (!empty($_FILES['img'])){
 	}
 }
 
-$sql = 'INSERT INTO funcionarios(Nombre,img_path,correo,cargo,es_academico) VALUES (\'%s\', \'%s\', \'%s\', \'%s\', \'%s\')';
-$sql = sprintf($sql, $_POST['nombre'], $image,$_POST['correo'],$_POST['cargo'],1);
+$sql = 'INSERT INTO funcionarios(Nombre,img_path,correo,fono,cargo,descripcion,grado_academico,area_interes,es_academico) VALUES (\'%s\',\'%s\',\'%s\',\'%s\', \'%s\', \'%s\', \'%s\', \'%s\', \'%s\')';
+$sql = sprintf($sql, $_POST['nombre'], $image,$_POST['correo'],$_POST['fono'],$_POST['cargo'],$_POST['descripcion'],$_POST['grado_academico'],$_POST['area_interes'],1);
 echo $sql;
 $result = $conexion->query($sql);
 

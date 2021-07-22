@@ -117,7 +117,7 @@
                                     <td>
                                         <div class="btn-group btn-group-sm" style="text-align: center;" role="group">
                                             <a class="btn btn-secondary"style="color:seagreen;" href="../dashboard/modificarA.php?id=<?php echo $mostrar['id']; ?>"><i class="bi bi-pencil"></i></a>
-                                            <a class="btn btn-danger" href="../database/funcionarios/eliminar.php?id=<?php echo $mostrar['id']; ?>"><i class="bi bi-x-circle"></i></a>
+                                            <a class="btn btn-danger" href="../database/academicos/eliminar.php?id=<?php echo $mostrar['id']; ?>"><i class="bi bi-x-circle"></i></a>
                                         </div>
                                     </td>
                                 </tr>
