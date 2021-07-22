@@ -50,7 +50,7 @@
                      
                                     </div>
                                     <div class="form-field  " style="text-align:center; margin-top: 5px;">
-                                        <input style="width: 200px; text-align:center;" id="año" name="año" class="input-text js-input" placeholder="Año" type="text" required>
+                                        <input style="width: 200px; text-align:center;" id="año" name="year" class="input-text js-input" placeholder="Año" type="text" required>
                                     </div>
                                     <div class="form-field  " style="text-align:center; margin-top: 5px;">
                                         <input style="width: 200px; text-align:center;" id="link" name="link" class="input-text js-input" placeholder="Link" type="text" required>
