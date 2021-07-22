@@ -19,7 +19,7 @@
         <?php include_once fromroot($file, "include/dashboard/header.php", TRUE); ?>
         <div class="capa"></div>
         <!--	--------------->
-        <input type="checkbox" id="btn-menu">
+        
         <?php include_once fromroot($file, "include/dashboard/navbar.php", TRUE); ?>
         <div class="fondo">
             <img src="../img/dpto/dpto.jpg" alt="">
@@ -117,7 +117,7 @@
                                     <td>
                                         <div class="btn-group btn-group-sm" style="text-align: center;" role="group">
                                             <a class="btn btn-secondary"style="color:seagreen;" href="../dashboard/modificarA.php?id=<?php echo $mostrar['id']; ?>"><i class="bi bi-pencil"></i></a>
-                                            <a class="btn btn-danger" href="../database/funcionarios/eliminar.php?id=<?php echo $mostrar['id']; ?>"><i class="bi bi-x-circle"></i></a>
+                                            <a class="btn btn-danger" href="../database/academicos/eliminar.php?id=<?php echo $mostrar['id']; ?>"><i class="bi bi-x-circle"></i></a>
                                         </div>
                                     </td>
                                 </tr>

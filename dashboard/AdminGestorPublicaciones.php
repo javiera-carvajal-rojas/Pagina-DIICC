@@ -19,7 +19,7 @@
         <?php include_once fromroot($file, "include/dashboard/header.php", TRUE); ?>
         <div class="capa"></div>
         <!--	--------------->
-        <input type="checkbox" id="btn-menu">
+        
         <?php include_once fromroot($file, "include/dashboard/navbar.php", TRUE); ?>
         <div class="fondo">
             <img src="../img/dpto/dpto.jpg" alt="">
@@ -95,7 +95,7 @@
                         </thead>
                         <tbody class="tbody">
                             <?php
-                            $sql = "select p.*, f.Nombre as autor from publicaciones as p INNER JOIN funcionarios as f ON p.id_academico = f.id ORDER BY p.id DESC"; // mejorar query falta nombre del que subio la noticia
+                            $sql = "select p.*, f.Nombre as autor from publicaciones as p INNER JOIN funcionarios as f ON p.id_academico = f.id ORDER BY p.id DESC";
                             $resultado = mysqli_query($conexion, $sql);
                             while ($mostrar = mysqli_fetch_array($resultado)) {
                             ?>

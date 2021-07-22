@@ -19,7 +19,7 @@
         <?php include_once fromroot($file, "include/dashboard/header.php", TRUE); ?>
         <div class="capa"></div>
         <!--	--------------->
-        <input type="checkbox" id="btn-menu">
+        
         <?php include_once fromroot($file, "include/dashboard/navbar.php", TRUE); ?>
         <div class="fondo">
             <img src="../img/dpto/dpto.jpg" alt="">
@@ -41,30 +41,28 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                    <form action="../database/trabajo/crear.php" method="POST" enctype="multipart/form-data">
-                                        <div style="margin-left: 110px;" class="form-field "><br>
-                                            <input   name="img" type="file" required>
-                                        </div>
-                                        <div class="form-field  " style="text-align:center; margin-top: 5px;">
-                                            <input style="width: 200px; text-align:center;" id="titulo" name="titulo" class="input-text js-input" placeholder="Titulo" type="text" required>
-                                        </div>
-                                        <div class="form-field  " style="text-align:center; margin-top: 5px;">
-                                            <input style="width: 200px; text-align:center;" id="empresa" name="empresa" class="input-text js-input" placeholder="Empresa" type="text" required>
-                                        </div>
-                                        <div class="form-field  " style="text-align:center; margin-top: 5px;">
-                                            <input style="width: 200px; text-align:center;" id="ciudad" name="ciudad" class="input-text js-input" placeholder="Ciudad" type="text" required>
-                                        </div>
-                                        <div class="form-field  " style="text-align:center; margin-top: 5px;">
-                                            <textarea style="width: 200px; text-align:center;" id="descripcion" name="descripcion" placeholder="Descripcion" required></textarea>
-                                        </div>
-                                    
-                                    <div style="margin-top:30px; text-align: center;" class="container-ingresar">
-                                        <button type="submit" class="btn">Ingresar</button>
+                                        <form action="../database/trabajo/crear.php" method="POST" enctype="multipart/form-data">
+                                            <div style="margin-left: 110px;" class="form-field "><br>
+                                                <input   name="img" type="file" required>
+                                            </div>
+                                            <div class="form-field  " style="text-align:center; margin-top: 5px;">
+                                                <input style="width: 200px; text-align:center;" id="titulo" name="cargo" class="input-text js-input" placeholder="Titulo" type="text" required>
+                                            </div>
+                                            <div class="form-field  " style="text-align:center; margin-top: 5px;">
+                                                <input style="width: 200px; text-align:center;" id="empresa" name="empresa" class="input-text js-input" placeholder="Empresa" type="text" required>
+                                            </div>
+                                            <div class="form-field  " style="text-align:center; margin-top: 5px;">
+                                                <input style="width: 200px; text-align:center;" id="ciudad" name="ciudad" class="input-text js-input" placeholder="Ciudad" type="text" required>
+                                            </div>
+                                            <div class="form-field  " style="text-align:center; margin-top: 5px;">
+                                                <textarea style="width: 200px; text-align:center;" id="descripcion" name="descripcion" placeholder="Descripcion" required></textarea>
+                                            </div>
+                                            <div style="margin-top:30px; text-align: center;" class="container-ingresar">
+                                                <button type="submit" class="btn">Ingresar</button>
+                                            </div>
+                                        </form>
                                     </div>
-                                </form>
-                                </div>
                                 </div>   
-                              
                             </div>
                         </div>
                     </div>

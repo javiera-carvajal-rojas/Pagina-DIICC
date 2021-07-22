@@ -153,7 +153,7 @@
         <?php include_once fromroot($file, "include/dashboard/header.php", TRUE); ?>
         <div class="capa"></div>
         <!--	--------------->
-        <input type="checkbox" id="btn-menu">
+        
         <?php include_once fromroot($file, "include/dashboard/navbar.php", TRUE); ?>
 
     </div>

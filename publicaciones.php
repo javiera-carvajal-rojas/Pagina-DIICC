@@ -37,7 +37,7 @@
         <div class="container">
             <div class="row">
                    <?php
-                        $sql = "SELECT * FROM `publicaciones` ORDER BY id ASC"; // mejorar query falta nombre del que subio la noticia
+                        $sql = "select p.*, f.Nombre as autor from publicaciones as p INNER JOIN funcionarios as f ON p.id_academico = f.id ORDER BY p.id DESC";
                         $resultado = mysqli_query($conexion, $sql);
                         while ($mostrar = mysqli_fetch_array($resultado)){ ?>
 

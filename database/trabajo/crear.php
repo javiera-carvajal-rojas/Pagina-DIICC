@@ -29,8 +29,8 @@ if (!empty($_FILES['img'])){
 	}
 }
 
-$sql = 'INSERT INTO trabajos(cargo,empresa,descripcion,ciudad,img_path ) VALUES (\'%s\', \'%s\', \'%s\', \'%s\')';
-$sql = sprintf($sql, $_POST['titulo'], $_POST['empresa'],$_POST['descripcion'],$_POST['ciudad'], $image);
+$sql = 'INSERT INTO trabajos(cargo,empresa,descripcion,ciudad,img_path) VALUES (\'%s\', \'%s\', \'%s\', \'%s\',\'%s\')';
+$sql = sprintf($sql, $_POST['cargo'], $_POST['empresa'],$_POST['descripcion'],$_POST['ciudad'], $image);
 echo $sql;
 $result = $conexion->query($sql);
 
