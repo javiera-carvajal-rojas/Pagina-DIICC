@@ -27,15 +27,15 @@ include_once "../include/dashboard/head.php";
                         $resultado = mysqli_query($conexion, $sql);
                         $mostrar = mysqli_fetch_array($resultado);
                         ?>
-                        <form class="form" action="../database/proyectos/modificar.php" method="post" enctype="multipart/form-data">
+                        <form class="form" action="../database/eventos/modificar.php" method="post" enctype="multipart/form-data">
                             <input type="hidden" name='id' <?php echo sprintf('value="%s"', $_GET['id']); ?>>
                             <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon2">@</span>
+                                <span class="input-group-addon" id="basic-addon2"><i class="bi bi-fonts"></i></span>
                                 <input type="text" name='nombre' class="form-control" placeholder="Nombre" aria-describedby="basic-addon1" <?php echo sprintf('value="%s"',  $mostrar['nombre']); ?>>
                             </div>
                            <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon3"><i class="bi bi-paint-bucket"></i></span>
-                                <input  class="form-control" name="fecha" placeholder="fecha" <?php echo sprintf('value="%s"',  strftime('%I:%M %p %d/%m/%Y', strtotime($mostrar['fecha']))) ?>>
+                                <span class="input-group-addon" id="basic-addon3"><i class="bi bi-calendar4-event"></i></span>
+                                <input type="date"  class="form-control" name="fecha" placeholder="fecha" <?php echo sprintf('value="%s"',  $mostrar['fecha']) ?>>
                             </div>
                              <div class="input-group" style="width: 100%;">
                                 <select style="width: 100%; text-align:center;" class="form-select" name="hora_inicio" id="hora_inicio" aria-label="Floating label select example">
@@ -64,7 +64,7 @@ include_once "../include/dashboard/head.php";
                                 </select>
                             </div>
                             <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon4"><i class="bi bi-paint-bucket"></i></span>
+                                <span class="input-group-addon" id="basic-addon4"><i class="bi bi-file-font"></i></span>
                                 <input  class="form-control" name="lugar" placeholder="lugar" <?php echo sprintf('value="%s"',  $mostrar['lugar']); ?>>
                             </div>
 

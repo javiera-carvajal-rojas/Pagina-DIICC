@@ -34,16 +34,15 @@ include_once "../include/dashboard/head.php";
                                 <span class="input-group-addon" id="basic-addon1"><i class="bi bi-file-image"></i></span>
                             </div>
                             <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon2">@</span>
+                                <span class="input-group-addon" id="basic-addon2"><i class="bi bi-fonts"></i></span>
                                 <input type="text" name='nombre' class="form-control" placeholder="Nombre" aria-describedby="basic-addon1" <?php echo sprintf('value="%s"',  $mostrar['nombre']); ?>>
                             </div>
                            <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon3"><i class="bi bi-paint-bucket"></i></span>
-                                <input  class="form-control" name='year' placeholder="Año" <?php echo sprintf('value="%s"', 
-                                $mostrar['year'])?>>
+                                <span class="input-group-addon" id="basic-addon3"><i class="bi bi-calendar-plus"></i></span>
+                                <input type="number" class="form-control" name='year' placeholder="Año" <?php echo sprintf('value="%s"', $mostrar['year'])?>>
                             </div>
                              <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon4"><i class="bi bi-paint-bucket"></i></span>
+                                <span class="input-group-addon" id="basic-addon4"><i class="bi bi-link-45deg"></i></span>
                                 <input  class="form-control" name="link" placeholder="Link" <?php echo sprintf('value="%s"',  $mostrar['link']); ?>>
                             </div>
 

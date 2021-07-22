@@ -34,12 +34,12 @@ include_once "../include/dashboard/head.php";
                                 <span class="input-group-addon" id="basic-addon1"><i class="bi bi-file-image"></i></span>
                             </div>
                             <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon2">@</span>
+                                <span class="input-group-addon" id="basic-addon2"><i class="bi bi-fonts"></i></span>
                                 <input type="text" name='titulo' class="form-control" placeholder="Username" aria-describedby="basic-addon1" <?php echo sprintf('value="%s"',  $mostrar['titulo']); ?>>
                             </div>
                             <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon3"><i class="bi bi-paint-bucket"></i></span>
-                                <input  class="form-control" name="fecha" placeholder="Fecha publicacion" <?php echo sprintf('value="%s"',  $mostrar['fecha']); ?>>
+                                <span class="input-group-addon" id="basic-addon3"><i class="bi bi-calendar-plus"></i></span>
+                                <input type="number" class="form-control" name="fecha" placeholder="Fecha publicacion" <?php echo sprintf('value="%s"',  $mostrar['fecha']); ?>>
                             </div>
                             <div class="input-group">
                                 <label>Autor:</label>
@@ -58,11 +58,11 @@ include_once "../include/dashboard/head.php";
                                 </select>
                             </div>
                             <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon3"><i class="bi bi-paint-bucket"></i></span>
+                                <span class="input-group-addon" id="basic-addon3"><i class="bi bi-people-fill"></i></span>
                                 <input  class="form-control" name="revision" placeholder="Revision" <?php echo sprintf('value="%s"',  $mostrar['revision']); ?>>
                             </div>
                             <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon3"><i class="bi bi-paint-bucket"></i></span>
+                                <span class="input-group-addon" id="basic-addon3"><i class="bi bi-link-45deg"></i></span>
                                 <input  class="form-control" name="acceso" placeholder="Acceso" <?php echo sprintf('value="%s"',  $mostrar['acceso']); ?>>
                             </div>
 

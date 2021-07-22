@@ -35,20 +35,20 @@ include_once "../include/dashboard/head.php";
                                 <span class="input-group-addon" id="basic-addon1"><i class="bi bi-file-image"></i></span>
                             </div>
                             <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon2"><i class="bi bi-paint-bucket"></i></span>
+                                <span class="input-group-addon" id="basic-addon2"><i class="bi bi-briefcase"></i></span>
                                 <input type="text" name='cargo' class="form-control" placeholder="Titulo" aria-describedby="basic-addon1" <?php echo sprintf('value="%s"',$mostrar['cargo']); ?>>
                             </div>
                            <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon6"><i class="bi bi-paint-bucket"></i></span>
+                                <span class="input-group-addon" id="basic-addon6"><i class="bi bi-building"></i></span>
                                 <input  class="form-control" name="empresa" placeholder="Empresa" <?php echo sprintf('value="%s"',$mostrar['empresa']); ?>>
                             </div>
                              <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon6"><i class="bi bi-paint-bucket"></i></span>
+                                <span class="input-group-addon" id="basic-addon6"><i class="bi bi-geo-alt-fill"></i></span>
                                 <input  class="form-control" name="ciudad" placeholder="ciudad" <?php echo sprintf('value="%s"',$mostrar['ciudad']); ?>>
                             </div>
 
                             <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon3"><i class="bi bi-paint-bucket"></i></span>
+                                <span class="input-group-addon" id="basic-addon3"><i class="bi bi-file-font"></i></span>
                                 <textarea class="form-control" name="descripcion" placeholder="Descripcion" style="height: 250px;"><?php echo   $mostrar['descripcion']; ?></textarea>
                             </div>
 
