@@ -19,7 +19,7 @@
 
 <!--	--------------->
 
-<input type="checkbox" id="btn-menu">
+
 <?php include_once fromroot($file, "include/dashboard/navbar.php", TRUE); ?>
 </body>
 <?php include_once fromroot($file, "include/dashboard/footer.php", TRUE); ?>

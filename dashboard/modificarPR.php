@@ -3,6 +3,7 @@
 <?php
 session_start();
 $file = __FILE__;
+$pagetitle = "PROYECTOS - DIICC UDA";
 include_once "../include/functions.php";
 include_once "../config/config.php";
 include_once "../include/dashboard/head.php";
@@ -56,15 +57,6 @@ include_once "../include/dashboard/head.php";
     </div>
 </body>
 
-<script src=<?php echo fromroot($file, "js/vendor/jquery-1.12.0.min.js"); ?>></script>
-<script src=<?php echo fromroot($file, "js/bootstrap.min.js"); ?>></script>
-<script src=<?php echo fromroot($file, "js/jquery.meanmenu.js"); ?>></script>
-<script src=<?php echo fromroot($file, "js/jquery.magnific-popup.js"); ?>></script>
-<script src=<?php echo fromroot($file, "js/ajax-mail.js"); ?>></script>
-<script src=<?php echo fromroot($file, "js/owl.carousel.min.js"); ?>></script>
-<script src=<?php echo fromroot($file, "js/jquery.mb.YTPlayer.js"); ?>></script>
-<script src=<?php echo fromroot($file, "js/jquery.nicescroll.min.js"); ?>></script>
-<script src=<?php echo fromroot($file, "js/plugins.js"); ?>></script>
-<script src=<?php echo fromroot($file, "js/main.js"); ?>></script>
+<?php include_once fromroot($file, "include/dashboard/footer.php", TRUE); ?>
 
 </html>

@@ -1,3 +1,4 @@
+<input type="checkbox" id="btn-menu">
 <div class="container-menu">
 	<div class="cont-menu">
 		<nav>
