@@ -30,7 +30,7 @@ if (!empty($_FILES['img'])){
 }
 
 $sql = 'INSERT INTO proyectos(nombre,year,img_path ,link) VALUES (\'%s\', \'%s\', \'%s\', \'%s\')';
-$sql = sprintf($sql, $_POST['nombre'], $_POST['año'], $image,$_POST['link']);
+$sql = sprintf($sql, $_POST['nombre'], $_POST['year'], $image,$_POST['link']);
 $result = $conexion->query($sql);
 
 header(sprintf('Location:%s', fromroot($file, "dashboard/AdminGestorProyectos.php", True)));
