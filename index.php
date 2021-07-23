@@ -277,8 +277,8 @@
                                         <div class="event-content-left">
                                             <h4><a href="#">%s</a></h4>
                                             <ul>
-                                                <li><i class="fa fa-clock-o"></i>%s - %s</li>
-                                                <li><i class="fa fa-map-marker"></i>%s</li>
+                                                <li><i class="bi bi-clock-fill"></i>%s - %s</li>
+                                                <li><i class="bi bi-pin-map-fill"></i>%s</li>
                                             </ul>
                                         </div>
                                     </div>
