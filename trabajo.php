@@ -7,6 +7,12 @@
     include_once "config/config.php";
     include_once "include/functions.php";
     include_once "include/head.php";
+    if (!isset($_GET['page'])){
+        $page = 0;
+    }
+    else{
+        $page = $_GET['page'];
+    }
 ?>
     <body>
         <!-- Header -->
@@ -34,7 +40,7 @@
             <div class="container">
                 <div class="row">
                     <?php
-                        $sql = "SELECT * FROM `trabajos` ORDER BY fecha ASC"; // mejorar query falta nombre del que subio la noticia
+                        $sql = sprintf("SELECT * FROM `trabajos` ORDER BY fecha ASC LIMIT 10 OFFSET %d",$page*10); // mejorar query falta nombre del que subio la noticia
                         $resultado = mysqli_query($conexion, $sql);
                         while ($mostrar = mysqli_fetch_array($resultado)){
 
@@ -70,6 +76,22 @@
                             );
                         }
                     ?>
+                </div>
+                <div class="pagination">
+                        <ul>
+                            <?php 
+                            #$total = mysqli_query($conexion, 'SELECT count(*) from noticias;');
+                            if ($page == 0){
+                                ++$page;
+                            }
+                                $page = $page + 1;
+                                echo '<li><a href="trabajo.php">1</a></li>';
+                            if ($resultado->num_rows != 0){
+                                echo sprintf('<li><a href="trabajo.php?page=%d">%d</a></li>', $page, $page);
+                            }
+                            ?>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

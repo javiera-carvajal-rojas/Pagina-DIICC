@@ -277,8 +277,8 @@
                                         <div class="event-content-left">
                                             <h4><a href="#">%s</a></h4>
                                             <ul>
-                                                <li><i class="fa fa-clock-o"></i>%s - %s</li>
-                                                <li><i class="fa fa-map-marker"></i>%s</li>
+                                                <li><i class="bi bi-clock-fill"></i>%s - %s</li>
+                                                <li><i class="bi bi-pin-map-fill"></i>%s</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -335,7 +335,7 @@
                 </div>
                 <div class="row">
                 <?php
-                        $sql = "SELECT * FROM `publicaciones` ORDER BY fecha ASC LIMIT 3"; // mejorar query falta nombre del que subio la noticia
+                        $sql = "SELECT p.*, f.Nombre AS autor FROM publicaciones AS p INNER JOIN funcionarios AS f ON p.id_academico = f.id ORDER BY fecha DESC LIMIT 3"; // mejorar query falta nombre del que subio la noticia
                         $resultado = mysqli_query($conexion, $sql);
                         while ($mostrar = mysqli_fetch_array($resultado)){
                             echo sprintf(
