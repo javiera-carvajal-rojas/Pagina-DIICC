@@ -8,6 +8,12 @@
     include_once "config/config.php";
     include_once "include/functions.php";
     include_once "include/head.php";
+    if (!isset($_GET['page'])){
+        $page = 0;
+    }
+    else{
+        $page = $_GET['page'];
+    }
 ?>
 
 <body>
@@ -37,7 +43,7 @@
         <div class="container">
             <div class="row">
                    <?php
-                        $sql = "select p.*, f.Nombre as autor from publicaciones as p INNER JOIN funcionarios as f ON p.id_academico = f.id ORDER BY p.id DESC";
+                        $sql = sprintf("SELECT p.*, f.Nombre AS autor FROM publicaciones AS p INNER JOIN funcionarios AS f ON p.id_academico = f.id ORDER BY p.id DESC LIMIT 10 OFFSET %d",$page*10);
                         $resultado = mysqli_query($conexion, $sql);
                         while ($mostrar = mysqli_fetch_array($resultado)){ ?>
 
@@ -69,10 +75,19 @@
            
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="pagination">
+                <div class="pagination">
                         <ul>
-                            <li><a href="#">1</a></li><!-- Por el momento es una sola pagina para el prototipo-->
-
+                            <?php 
+                            #$total = mysqli_query($conexion, 'SELECT count(*) from noticias;');
+                            if ($page == 0){
+                                ++$page;
+                            }
+                                $page = $page + 1;
+                                echo '<li><a href="publicaciones.php">1</a></li>';
+                            if ($resultado->num_rows != 0){
+                                echo sprintf('<li><a href="publicaciones.php?page=%d">%d</a></li>', $page, $page);
+                            }
+                            ?>
                         </ul>
                     </div>
                 </div>
